@@ -2,3 +2,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.sidebar-icon {
+    border-radius: 2rem;
+}
+
+.sidebar-tooltip {
+    scale: 0;
+}
+
+.sidebar-icon:hover .sidebar-tooltip {
+    scale: 1;
+}
+
+.sidebar-icon:hover {
+    border-radius: 1rem;
+}
