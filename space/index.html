@@ -10,13 +10,16 @@
 <body class="bg-gradient-to-br from-[#0B1026] to-[#1B2441]">
     <!-- Navigation -->
     <nav class="fixed top-0 w-full h-[80px] bg-[rgba(27,36,65,0.8)] bg-blur flex items-center justify-between z-50">
-        <div class="logo left-0 px-8 flex items-center gap-4 text-white">
+      <a href="#">
+        <div class="logo left-0 px-8 flex items-center gap-4 text-white transition-all duration-300 hover:text-[rgba(123,77,255,0.2)] cursor-pointer">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" 
-            class="rocket-icon w-8 h-8">
+            class="rocket-icon w-8 h-8 ">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
             </svg>
             <span>COSMIC VOYAGES</span>
         </div>
+      </a>
+        
         <ul class="nav-links flex flex-row gap-8 px-8 text-[#B8C3E6]">
             <li class="hover:text-[#00F0FF]"><a href="#destinations">Destinations</a></li>
             <li class="hover:text-[#00F0FF]"><a href="#experiences">Experiences</a></li>
@@ -64,7 +67,8 @@
       <h2 class="text-4xl font-semibold text-white text-center mb-16 tracking-wider">Popular Destinations</h2>
       <div class="destination-grid grid grid-cols-1 md:grid-cols-2 gap-8">
           <!-- Mars Card -->
-          <div class="destination-card bg-[rgba(27,36,65,0.7)] border border-[rgba(123,77,255,0.2)] rounded-xl overflow-hidden hover:-translate-y-2 transition-all duration-300 hover:shadow-lg hover:shadow-[rgba(123,77,255,0.2)]">
+          <div class="destination-card bg-[rgba(27,36,65,0.7)] border border-[rgba(123,77,255,0.2)] rounded-xl overflow-hidden 
+          hover:-translate-y-2 transition-all duration-300 hover:shadow-lg hover:shadow-[rgba(123,77,255,0.2)]">
             <div class="card-image mars h-[200px] bg-[url('../images/mars-colony.jpg')] bg-cover bg-center"></div>
               <div class="p-6">
                   <h3 class="text-2xl text-white font-semibold mb-3">MARS COLONY</h3>
@@ -102,5 +106,139 @@
           </div>
       </div>
   </section>
+
+  <section id="experiences" class="bg-[#0B1026] w-full">
+    <div class="max-w-[1200px] mx-auto px-8 py-20">
+        <h2 class="text-4xl font-semibold text-white text-center mb-16 tracking-wider">Space Experiences</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Zero Gravity -->
+            <div class="bg-[rgba(27,36,65,0.7)] rounded-xl p-6 border border-[rgba(123,77,255,0.2)] hover:-translate-y-2 transition-all duration-300 hover:shadow-lg hover:shadow-[rgba(123,77,255,0.2)]">
+                <div class="h-48 rounded-lg bg-[url('../images/zero-gravity.jpg')] bg-cover bg-center mb-4"></div>
+                <h3 class="text-xl text-white font-semibold mb-3">Zero Gravity Flight</h3>
+                <p class="text-[#B8C3E6] mb-4">Experience weightlessness in our specialized training aircraft.</p>
+                <div class="flex justify-between items-center">
+                    <span class="text-[#00F0FF]">45 Minutes</span>
+                    <button class="px-4 py-2 border border-[#7B4DFF] rounded-lg text-white hover:bg-[#7B4DFF] transition-colors duration-300">Book Now</button>
+                </div>
+            </div>
+
+            <!-- Space Walk -->
+            <div class="bg-[rgba(27,36,65,0.7)] rounded-xl p-6 border border-[rgba(123,77,255,0.2)] hover:-translate-y-2 transition-all duration-300 hover:shadow-lg hover:shadow-[rgba(123,77,255,0.2)]">
+                <div class="h-48 rounded-lg bg-[url('../images/space-walk.jpg')] bg-cover bg-center mb-4"></div>
+                <h3 class="text-xl text-white font-semibold mb-3">Space Walk Simulation</h3>
+                <p class="text-[#B8C3E6] mb-4">Train in our underwater facility to simulate EVA operations.</p>
+                <div class="flex justify-between items-center">
+                    <span class="text-[#00F0FF]">2 Hours</span>
+                    <button class="px-4 py-2 border border-[#7B4DFF] rounded-lg text-white hover:bg-[#7B4DFF] transition-colors duration-300">Book Now</button>
+                </div>
+            </div>
+
+            <!-- Launch Simulation -->
+            <div class="bg-[rgba(27,36,65,0.7)] rounded-xl p-6 border border-[rgba(123,77,255,0.2)] hover:-translate-y-2 transition-all duration-300 hover:shadow-lg hover:shadow-[rgba(123,77,255,0.2)]">
+                <div class="h-48 rounded-lg bg-[url('../images/launch-sim.jpg')] bg-cover bg-center mb-4"></div>
+                <h3 class="text-xl text-white font-semibold mb-3">Launch Simulation</h3>
+                <p class="text-[#B8C3E6] mb-4">Experience 3G forces in our advanced launch simulator.</p>
+                <div class="flex justify-between items-center">
+                    <span class="text-[#00F0FF]">30 Minutes</span>
+                    <button class="px-4 py-2 border border-[#7B4DFF] rounded-lg text-white hover:bg-[#7B4DFF] transition-colors duration-300">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="training" class="bg-[#0B1026] w-full">
+    <div class="max-w-[1200px] mx-auto px-8 py-20">
+        <h2 class="text-4xl font-semibold text-white text-center mb-16 tracking-wider">Astronaut Training</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <!-- Training Timeline -->
+            <div class="space-y-8">
+                <div class="relative pl-8 border-l-2 border-[#7B4DFF]">
+                    <div class="absolute w-4 h-4 bg-[#7B4DFF] rounded-full -left-[9px] top-0"></div>
+                    <h3 class="text-white text-xl font-semibold mb-2">Basic Training</h3>
+                    <p class="text-[#B8C3E6]">Physical conditioning, space science fundamentals, and emergency procedures.</p>
+                    <span class="text-[#00F0FF] text-sm mt-2 block">3 Months</span>
+                </div>
+                
+                <div class="relative pl-8 border-l-2 border-[#7B4DFF]">
+                    <div class="absolute w-4 h-4 bg-[#7B4DFF] rounded-full -left-[9px] top-0"></div>
+                    <h3 class="text-white text-xl font-semibold mb-2">Advanced Systems</h3>
+                    <p class="text-[#B8C3E6]">Spacecraft systems, navigation, and life support training.</p>
+                    <span class="text-[#00F0FF] text-sm mt-2 block">6 Months</span>
+                </div>
+                
+                <div class="relative pl-8 border-l-2 border-[#7B4DFF]">
+                    <div class="absolute w-4 h-4 bg-[#7B4DFF] rounded-full -left-[9px] top-0"></div>
+                    <h3 class="text-white text-xl font-semibold mb-2">Mission Specific</h3>
+                    <p class="text-[#B8C3E6]">Specialized training for your chosen destination and mission objectives.</p>
+                    <span class="text-[#00F0FF] text-sm mt-2 block">4 Months</span>
+                </div>
+            </div>
+
+            <!-- Training Stats -->
+            <div class="grid grid-cols-2 gap-6">
+              <div class="bg-[rgba(27,36,65,0.7)] p-6 rounded-xl border border-[rgba(123,77,255,0.2)] flex flex-col items-center justify-center">
+                  <span class="text-[#00F0FF] text-2xl font-bold block mb-3">98%</span>
+                  <span class="text-white text-xl">Success Rate</span>
+              </div>
+              <div class="bg-[rgba(27,36,65,0.7)] p-6 rounded-xl border border-[rgba(123,77,255,0.2)] flex flex-col items-center justify-center">
+                  <span class="text-[#00F0FF] text-2xl font-bold block mb-3">500+</span>
+                  <span class="text-white text-xl">Graduates</span>
+              </div>
+              <div class="bg-[rgba(27,36,65,0.7)] p-6 rounded-xl border border-[rgba(123,77,255,0.2)] flex flex-col items-center justify-center">
+                  <span class="text-[#00F0FF] text-2xl font-bold block mb-3">13</span>
+                  <span class="text-white text-xl">Training Facilities</span>
+              </div>
+              <div class="bg-[rgba(27,36,65,0.7)] p-6 rounded-xl border border-[rgba(123,77,255,0.2)] flex flex-col items-center justify-center">
+                  <span class="text-[#00F0FF] text-2xl font-bold block mb-3">24/7</span>
+                  <span class="text-white text-xl">Support</span>
+              </div>
+          </div>
+        </div>
+    </div>
+</section>
+
+<section id="booking" class="bg-[#0B1026] w-full">
+    <div class="max-w-[1200px] mx-auto px-8 py-20">
+        <h2 class="text-4xl font-semibold text-white text-center mb-16 tracking-wider">Book Your Flight</h2>
+        <div class="bg-[rgba(27,36,65,0.7)] p-8 rounded-xl border border-[rgba(123,77,255,0.2)]">
+            <form class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="space-y-2">
+                    <label class="text-white block">Full Name</label>
+                    <input type="text" class="w-full bg-[#0B1026] border border-[#7B4DFF] rounded-lg p-3 text-white focus:outline-none focus:ring-2 focus:ring-[#00F0FF]">
+                </div>
+                
+                <div class="space-y-2">
+                    <label class="text-white block">Email</label>
+                    <input type="email" class="w-full bg-[#0B1026] border border-[#7B4DFF] rounded-lg p-3 text-white focus:outline-none focus:ring-2 focus:ring-[#00F0FF]">
+                </div>
+                
+                <div class="space-y-2">
+                    <label class="text-white block">Destination</label>
+                    <select class="w-full bg-[#0B1026] border border-[#7B4DFF] rounded-lg p-3 text-white focus:outline-none focus:ring-2 focus:ring-[#00F0FF]">
+                        <option>Mars Colony</option>
+                        <option>Lunar Base</option>
+                    </select>
+                </div>
+                
+                <div class="space-y-2">
+                    <label class="text-white block">Preferred Date</label>
+                    <input type="date" class="w-full bg-[#0B1026] border border-[#7B4DFF] rounded-lg p-3 text-white focus:outline-none focus:ring-2 focus:ring-[#00F0FF]">
+                </div>
+                
+                <div class="space-y-2 md:col-span-2">
+                    <label class="text-white block">Special Requirements</label>
+                    <textarea class="w-full bg-[#0B1026] border border-[#7B4DFF] rounded-lg p-3 text-white focus:outline-none focus:ring-2 focus:ring-[#00F0FF] h-32"></textarea>
+                </div>
+                
+                <div class="md:col-span-2 flex justify-center">
+                    <button class="px-12 py-4 bg-gradient-to-r from-[#7B4DFF] to-[#00F0FF] rounded-lg text-white font-semibold hover:scale-105 transition-transform duration-300">
+                        Submit Booking Request
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
 </body>
 </html>
