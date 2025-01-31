@@ -27,14 +27,15 @@
 
     <!-- Hero Section -->
     <header class="hero h-screen bg-gradient-to-br from-[#0B1026] to-[#1B2441] relative flex flex-col items-center text-white pt-[80px]">
-        <h1 class="text-center top-[30%]">EXPLORE THE COSMOS</h1>
-        <p>Your Journey Beyond Earth Begins Here</p>
+        <h1 class="absolute top-[15%] text-center text-7xl text-white">EXPLORE THE COSMOS</h1>
+        <p class="absolute top-[calc(15%+5rem)] text-[#B8C3E6] text-2xl tracking-wide">Your Journey Beyond Earth Begins Here</p>
         
         <!-- Launch Countdown -->
-        <div class="countdown">
-            <div class="countdown-item">
-                <span class="number">15</span>
-                <span class="label">DAYS</span>
+        <div class="countdown absolute top-[60%] flex gap-5">
+            <div class="countdown-item w-[120px] bg-[rgba(27, 36, 65, 0.5)] 
+            border border-[rgba(123, 77, 255, 0.3)] ">
+                <span class="number text-[#00F0FF] block">15</span>
+                <span class="label text-[#B8C3E6]">DAYS</span>
             </div>
             <div class="countdown-item">
                 <span class="number">08</span>
@@ -46,7 +47,9 @@
             </div>
         </div>
         
-        <button class="cta-button">
+        <button class="cta-button absolute top-[75%] bg-gradient-to-r from-[#7B4DFF] to-[#00F0FF] px-8 py-4 
+        flex items-center rounded-md 
+        hover:scale-105 transition-transform duration-300 shadow-lg shadow-[rgba(123,77,255,0.4)]">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="button-icon">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M12.75 3.03v.568c0 .334.148.65.405.864l1.068.89c.442.369.535 1.01.216 1.49l-.51.766a2.25 2.25 0 01-1.161.886l-.143.048a1.107 1.107 0 00-.57 1.664c.369.555.169 1.307-.427 1.605L9 13.125l.423 1.059a.956.956 0 01-1.652.928l-.679-.906a1.125 1.125 0 00-1.906.172L4.5 15.75l-.612.153M12.75 3.031a9 9 0 00-8.25 12.733M12.75 3.031a9 9 0 016.69 14.036m0 0l-.177-.529A2.25 2.25 0 0017.128 15H16.5l-.324-.324a1.453 1.453 0 00-2.328.377l-.036.073a1.586 1.586 0 01-.982.816l-.99.282c-.55.157-.894.702-.8 1.267l.073.438c.08.474.49.821.97.821.846 0 1.598.542 1.865 1.345l.215.643m5.276-3.67a9.012 9.012 0 01-5.276 3.67m0 0a9 9 0 01-10.275-4.835M15.75 9c0 .896-.393 1.7-1.016 2.25" />
             </svg>
